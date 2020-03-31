@@ -46,13 +46,36 @@ $(document).ready(function () {
             dataType: "json"
         }).then(function (response) {
             console.log(response);
-            console.log("hello");
+            // console.log("hello");
             // console.log(reponse.description);
 
         });
-
     }
 
-getData();
-getData2();
+
+    // Data from astro
+    // function getData3() {
+
+    //     var queryURL3 = "https://cors-anywhere.herokuapp.com/https://astroapp.com/astro/apis/chart/apis/chart";
+    //     $.ajax({
+    //         // headers: {
+    //         //     "Access-Control-Allow-Origin": "*",
+    //         //     "Content-Type": "application/json"
+    //         //   },
+    //         // type: 'POST',
+    //         url: queryURL3,
+    //         method: "GET",
+    //         dataType: "json"
+    //     }).then(function (response) {
+    //         console.log(response);
+    //         console.log("hello");
+    //         // console.log(reponse.description);
+
+    //     });
+
+    // }
+
+    getData();
+    getData2();
+    // getData3();
 });
