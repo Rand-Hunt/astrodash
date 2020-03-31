@@ -17,8 +17,8 @@ $(document).ready(function () {
       queryURL2 =
         "https://api.dandelion.eu/datatxt/nex/v1/?text=" +
         encodeURI(resp) +
-        "&min_confidence=0.5";
-        "&top_entities=4&include=abstract%2Ctypes%2Ccategories"+
+        "&min_confidence=0.2"+
+        // "&top_entities=4"+
         "&token=" +token;
 
       console.log(queryURL2);
