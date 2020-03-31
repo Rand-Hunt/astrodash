@@ -14,18 +14,22 @@ $(document).ready(function () {
     });
 
 
+    // Data from aztro
     function getData() {
 
-        var queryURL = "https://ohmanda.com/api/horoscope/" + sign + "/";
+        var queryURL = "https://aztro.sameerkumar.website?sign=" + sign + "&day=today";
 
         $.ajax({
+            type: 'POST',
             url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-            console.log(response);
+            dataType: "json"
+        }).then(function (reponse) {
+            console.log(reponse);
+            console.log(reponse.description);
 
         });
+
     }
 
-    getData();
+getData();
 });
