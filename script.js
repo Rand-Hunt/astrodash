@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     function getData() {
 
-        var queryURL = "https://ohmanda.com/api/horoscope/" + sign;
+        var queryURL = "https://ohmanda.com/api/horoscope/" + sign + "/";
 
         $.ajax({
             url: queryURL,
