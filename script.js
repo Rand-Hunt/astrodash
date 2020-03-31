@@ -1,7 +1,7 @@
 // Once document is loaded
 $(document).ready(function () {
 
-    var sign = "";
+    var sign = "gemini";
 
     $(".submit").on("click", function (event) {
 
@@ -9,14 +9,14 @@ $(document).ready(function () {
 
         // Astro sign input
         // sign = $("#sign").val();
-        sign = "gemini";
+        // sign = "gemini";
 
     });
 
 
     function getData() {
 
-        var queryURL = "http://ohmanda.com/api/horoscope/" + sign;
+        var queryURL = "https://ohmanda.com/api/horoscope/" + sign;
 
         $.ajax({
             url: queryURL,
@@ -26,4 +26,6 @@ $(document).ready(function () {
 
         });
     }
+
+    getData();
 });
