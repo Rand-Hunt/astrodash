@@ -10,6 +10,31 @@ $(document).ready(function () {
 
     });
 
+    function chineseZodiac(indate) {
+        // using moment.js and moment-lunar.js
+
+        var zodiacTable = ["Monkey","Rooster","Dog","Pig","Rat","Ox","Tiger","Rabbit","Dragon","Snake","Horse","Goat"]
+
+        //convert date into lunar date
+        var tlunar2 = moment(indate).lunar().format('YYYY-MM-DD')
+
+        console.log("Test "+indate+" into lunar is "+tlunar2)
+
+        var tlunarYear = moment(tlunar2).year();
+
+        tsign = zodiacTable[tlunarYear % 12]
+
+        console.log(tsign)
+
+        // 1924 = Rat
+        // 1920 % 12 = 0
+
+
+
+    }
+
+
+
     function getDataBoth() {
         getData2();
         getData3();
@@ -102,7 +127,10 @@ $(document).ready(function () {
         });
     }
 
-    getData(resp,getDataBoth);
-    // getData2();
+    // getData(resp,getDataBoth);
+   
+    //test Chinese Zodiac
+
+    chineseZodiac("1970-01-01");
 
     });
