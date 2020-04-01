@@ -4,20 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
     <title>Document</title>
 </head>
 
 <body>
 
-    <!-- why do we have jquery loaded TWICE? -- KC -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script> -->
+    <div class="uk-container uk-container-large">
+        <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+        
+            <div>
+                <div class="uk-card uk-card-default uk-card-large uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="uk-container uk-container-large">
+        <div class="uk-child-width-1-4@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small">
+                    <div class="uk-card-media-top">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/25/06/31/zodiac-signs-2976245_960_720.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Chinese Zodiac</h3>
+                        <p>Click here to learn more about your Chinese Zodiac!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="uk-child-width-1-4@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small">
+                    <div class="uk-card-media-top">
+                        <img src="https://cdn.pixabay.com/photo/2018/05/17/15/24/armillar-ball-3408811_960_720.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Horoscope</h3>
+                        <p>Click here to learn more about your Chinese Zodiac!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="uk-container uk-container-large">
+        <a class="uk-button uk-button-default" href="#modal" uk-toggle>Click to see more!</a>
+        <div id="modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h2 class="uk-modal-title">Gemini</h2>
+                <p>Taking from the twins that represent it, Gemini is considered one of the most important of the zodiacs
+                    since it captures someone's most basic levels.[5] For instance, it articulates their dual nature, a
+                    species with lower self and higher self as well as the way they are bilaterally symmetrical.[5] Gemini
+                    is also considered the most adaptable sign of the zodiac owing to the so-called mutable energy that
+                    allow individuals within this sign the capability to view life from different angles.[6]</p>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="uk-container uk-container-large">
+        <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2020-04-08T23:18:57+00:00">
+            <div>
+                <div class="uk-countdown-number uk-countdown-days"></div>
+                <p>Days</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-hours"></div>
+                <p>Hours</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-minutes"></div>
+                <p>Minutes</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-seconds"></div>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
