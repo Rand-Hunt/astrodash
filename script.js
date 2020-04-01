@@ -252,9 +252,6 @@ $(document).ready(function() {
 
   function getGiphyImages(zodiac) {
 
-    // Create div
-    var giphyDiv = $("<div>");
-
     // Add image
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + zodiac +"&limit=1&api_key=wslWpWhssAgYDK6zVXacBDsacT47flr4";
