@@ -2,7 +2,7 @@
     var resp = "";
 
 $(document).ready(function () {
-    var sign = "gemini";
+    var sign = "cancer";
 
     $(".submit").on("click", function (event) {
 
@@ -10,26 +10,71 @@ $(document).ready(function () {
 
     });
 
-    function getData2() {
-      console.log("resp2 = " + resp);
-      token = "8921d8d3e0274f0997aa91de967aca75";
+    function getDataBoth() {
+        getData2();
+        getData3();
+    }
 
-      queryURL2 =
-        "https://api.dandelion.eu/datatxt/nex/v1/?text=" +
-        encodeURI(resp) +
-        "&min_confidence=0.2"+
-        // "&top_entities=4"+
-        "&token=" +token;
+    function getData3() {
+        console.log("resp2 = " + resp);
+        token = "8921d8d3e0274f0997aa91de967aca75";
 
-      console.log(queryURL2);
-          $.ajax({
-              type: "POST",
-              url: queryURL2,
-              dataType: "json"
-          }).then(function (response) {
-              console.log(response);
-              // console.log(reponse.description);
-          });
+        queryURL3 =
+            "https://api.dandelion.eu/datatxt/sent/v1/?text=" +
+            encodeURI(resp) +
+            "&token=" +token;
+            console.log(queryURL3);
+            $.ajax({
+                type: "POST",
+                url: queryURL3,
+                dataType: "json"
+            }).then(function (response) {
+                console.log(response);
+                console.log(response.sentiment.type)
+            }
+    )}
+
+    function getData2(options,callback) {
+        console.log("resp2 = " + resp);
+        token = "8921d8d3e0274f0997aa91de967aca75";
+
+        queryURL2 =
+            "https://api.dandelion.eu/datatxt/nex/v1/?text=" +
+            encodeURI(resp) +
+            "&min_confidence=0.5"+
+            // "&top_entities=1"+
+            "&token=" +token;
+
+        console.log(queryURL2);
+            $.ajax({
+                type: "POST",
+                url: queryURL2,
+                dataType: "json"
+            }).then(function (response) {
+                //   console.log(response);
+                // console.log(reponse.description);
+                var arr = response.annotations;
+                // sample reply  arr[x]   (useful spot,title, label)
+                // start: 191
+                // end: 196
+                // spot: "happy"    
+                // confidence: 0.5371
+                // id: 169409
+                // title: "Happiness"
+                // uri: "http://en.wikipedia.org/wiki/Happiness"
+                // label: "Happiness"
+
+
+                //  concat version
+                //concat = ""
+                // for (var i=0; i<arr.length;i++) {
+                //     concat = concat + arr[i].label
+                // }
+                // random version
+                var rand = Math.floor(Math.random()*arr.length)
+                console.log(arr[rand].label);
+                // callback();
+            });
     }
  
     function getData(options,callback) {
@@ -47,17 +92,17 @@ $(document).ready(function () {
             url: queryURL,
             dataType: "json"
         }).then(function (response) {
-            options = response.description;
+            // options = response.description;
             resp = response.description;
             // console.log(response);
             // console.log(response.description);
-            console.log("options="+options)
-            console.log("resp="+resp)
+            // console.log("options="+options)
+            // console.log("resp="+resp)
             callback();
         });
     }
 
-    getData(resp,getData2);
+    getData(resp,getDataBoth);
     // getData2();
 
     });
