@@ -1,136 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>AstroDash</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Picture -->
-    <div class="uk-height-large uk-background-cover uk-light uk-flex uk-position-relative" uk-parallax="bgy: -200"
-        style="background-image: url('https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340_960_720.jpg');"
-        id="background">
-
-        <!-- <div class="uk-position-relative"> -->
-        <!-- <img src="images/light.jpg" alt=""> -->
-        <div class="uk-position-top" id="navbar">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li class="uk-active">
-                            <a href="#">Astrology</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Horoscope</a></li>
-                                    <li><a href="#">Get your horoscope!</a></li>
-                                    <li class="uk-nav-header">Chinese Zodiac</li>
-                                    <li><a href="#">Get your zodiac</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li><a href="#">Natal Chart</a></li>
-
-                    </ul>
+    <div
+      class="uk-height-large uk-background-cover uk-light uk-flex uk-position-relative"
+      uk-parallax="bgy: -200"
+      style="background-image: url('https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340_960_720.jpg');"
+      id="background"
+    >
+      <!-- <div class="uk-position-relative"> -->
+      <!-- <img src="images/light.jpg" alt=""> -->
+      <div class="uk-position-top" id="navbar">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li class="uk-active">
+                <a href="#">Astrology</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Horoscope</a></li>
+                    <li><a href="#">Get your horoscope!</a></li>
+                    <li class="uk-nav-header">Chinese Zodiac</li>
+                    <li><a href="#">Get your zodiac</a></li>
+                  </ul>
                 </div>
-            </nav>
+              </li>
+
+              <li><a href="#">Natal Chart</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- <h1 class="uk-heading-large uk-position-center">AstroDash</h1> -->
+
+      <!-- Birthday Countdown -->
+      <div
+        class="uk-position-small uk-position-bottom-right uk-height-small uk-padding"
+        uk-grid
+        uk-countdown="date: 2020-04-08T23:18:57+00:00"
+        id="bday-countdown"
+      >
+        <h1
+          class="uk-heading-small uk-position-bottom-right uk-margin-right"
+          id="bday-count-head"
+        >
+          Birthday Countdown:
+        </h1>
+
+        <div>
+          <div class="uk-countdown-number uk-countdown-days"></div>
+          <p>Days</p>
         </div>
-
-        <!-- <h1 class="uk-heading-large uk-position-center">AstroDash</h1> -->
-
-        <!-- Birthday Countdown -->
-        <div class="uk-position-small uk-position-bottom-right uk-height-small uk-padding" uk-grid
-            uk-countdown="date: 2020-04-08T23:18:57+00:00" id="bday-countdown">
-
-            <h1 class="uk-heading-small uk-position-bottom-right uk-margin-right" id="bday-count-head">Birthday Countdown:</h1>
-
-            <div>
-                <div class="uk-countdown-number uk-countdown-days"></div>
-                <p>Days</p>
-            </div>
-            <div>
-                <div class="uk-countdown-number uk-countdown-hours"></div>
-                <p>Hours</p>
-            </div>
-            <div>
-                <div class="uk-countdown-number uk-countdown-minutes"></div>
-                <p>Minutes</p>
-            </div>
-            <div>
-                <div class="uk-countdown-number uk-countdown-seconds"></div>
-                <p>Seconds</p>
-            </div>
-
+        <div>
+          <div class="uk-countdown-number uk-countdown-hours"></div>
+          <p>Hours</p>
         </div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-minutes"></div>
+          <p>Minutes</p>
+        </div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-seconds"></div>
+          <p>Seconds</p>
+        </div>
+      </div>
     </div>
 
     <div id="bday-form">
-        <form class="uk-width-1-4 uk-position-large uk-position-top-right uk-overlay uk-overlay-default">
-            <fieldset class="uk-fieldset">
+      <form
+        class="uk-width-1-4 uk-position-large uk-position-top-right uk-overlay uk-overlay-default"
+      >
+        <fieldset class="uk-fieldset">
+          <legend class="uk-legend">
+            Fill in your Birthday to learn more about your horoscope:
+          </legend>
 
-                <legend class="uk-legend">Fill in your Birthday to learn more about your horoscope:</legend>
+          <br />
 
-                <br>
+          <div class="uk-margin uk-width-1-2 uk-display-inline">
+            <!-- Month dropdown -->
+            <div class="uk-margin">
+              <input
+                class="uk-input"
+                type="text"
+                id="bday-month"
+                placeholder="MM"
+              />
+              <input
+                class="uk-input"
+                type="text"
+                id="bday-day"
+                placeholder="DD"
+              />
+              <input
+                class="uk-input"
+                type="text"
+                id="bday-year"
+                placeholder="YYYY"
+              />
+            </div>
+          </div>
 
-                <div class="uk-margin uk-width-1-2 uk-display-inline">
-                    <!-- Month dropdown -->
-                    <div class="uk-margin">
-                        <input class="uk-input" type="text" id="bday-month" placeholder="MM">
-                    </div>
-
-                    <!-- Day dropdown -->
-                    <div class="uk-margin">
-                        <input class="uk-input" type="text" id="bday-day" placeholder="DD">
-                    </div>
-
-                    <!-- Year dropdown -->
-                    <div class="uk-margin">
-                        <input class="uk-input" type="text" id="bday-year" placeholder="YYYY">
-                    </div>
-
-                </div>
-
-                <div class="uk-margin-top uk-width-1-2">
-                    <button class="uk-button" id="bday-submit">Submit</button>
-                </div>
-
-            </fieldset>
-        </form>
+          <div class="uk-margin-top uk-width-1-2">
+            <button class="uk-button" id="bday-submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
 
-    <br>
+    <br />
 
     <div class="uk-container uk-container-large">
-
-        <!-- Scrollspy cards - left and right -->
-        <div class="uk-child-width-1-2@m uk-grid-match" id="horoscope-description" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body"
-                    uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                    <h3 class="uk-card-title">Horoscope 1</h3>
-                    <p id="horoscope1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-            <div>
-                <div class="uk-card uk-card-default uk-card-body"
-                    uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                    <h3 class="uk-card-title">Horoscope 2</h3>
-                    <p id="horoscope1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
+      <!-- Scrollspy cards - left and right -->
+      <div
+        class="uk-child-width-1-2@m uk-grid-match"
+        id="horoscope-description"
+        uk-grid
+      >
+        <div>
+          <div
+            class="uk-card uk-card-default uk-card-body"
+            uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
+          >
+            <h3 class="uk-card-title">Horoscope 1</h3>
+            <p id="horoscope1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
         </div>
-    </div>
 
+        <div>
+          <div
+            class="uk-card uk-card-default uk-card-body"
+            uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+          >
+            <h3 class="uk-card-title">Horoscope 2</h3>
+            <p id="horoscope1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -140,6 +167,5 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
-</body>
-
+  </body>
 </html>
