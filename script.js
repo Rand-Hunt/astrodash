@@ -2,7 +2,7 @@
 var resp = "";
 
 $(document).ready(function() {
-  var sign = "cancer";
+  var horoscope = "cancer";
 
   $(".submit").on("click", function(event) {
     event.preventDefault();
@@ -23,84 +23,84 @@ $(document).ready(function() {
         (month == 12 && day >= 22) ||
         (month == 1 && day <= 19)
     ) {
-        return (sign = "capricorn");
+        return (horoscope = "capricorn");
     }
     // Aquarius - Jan 20 - Feb 18
     else if (
         (month == 1 && day >= 20) ||
         (month == 2 && day <= 18)
     ) {
-        return (sign = "aquarius");
+        return (horoscope = "aquarius");
     }
     // Pisces - Feb 19 - March 20
     else if (
         (month == 2 && day >= 19) ||
         (month == 3 && day <= 20)
     ) {
-        return (sign = "pisces");
+        return (horoscope = "pisces");
     }
     // Aries - March 21 - April 19
     else if (
         (month == 3 && day >= 21) ||
         (month == 4 && day <= 19)
     ) {
-        return (sign = "aries");
+        return (horoscope = "aries");
     }
     // Taurus - April 20 - May 20
     else if (
         (month == 4 && day >= 20) ||
         (month == 5 && day <= 20)
     ) {
-        return (sign = "taurus");
+        return (horoscope = "taurus");
     }
     // Gemini - May 21 - June 20
     else if (
         (month == 5 && day >= 21) ||
         (month == 6 && day <= 20)
     ) {
-        return (sign = "gemini");
+        return (horoscope = "gemini");
     }
     // Cancer - June 21 - July 22
     else if (
         (month == 6 && day >= 21) ||
         (month == 7 && day <= 22)
     ) {
-        return (sign = "cancer");
+        return (horoscope = "cancer");
     }
     // Leo - July 23 - Aug 22
     else if (
         (month == 7 && day >= 23) ||
         (month == 8 && day <= 22)
     ) {
-        return (sign = "leo");
+        return (horoscope = "leo");
     }
     // Virgo - Aug 23 - Sept 22
     else if (
         (month == 8 && day >= 23) ||
         (month == 9 && day <= 22)
     ) {
-        return (sign = "virgo");
+        return (horoscope = "virgo");
     }
     // Libra - Sept 23 - Oct 22
     else if (
         (month == 9 && day >= 23) ||
         (month == 10 && day <= 22)
     ) {
-        return (sign = "libra");
+        return (horoscope = "libra");
     }
     // Scorpio - October 23 - November 21
     else if (
         (month == 10 && day >= 23) ||
         (month == 11 && day <= 21)
     ) {
-        return (sign = "scorpio");
+        return (horoscope = "scorpio");
     }
     // Sagittarius - November 22 - December 21
     else if (
         (month == 11 && day >= 22) ||
         (month == 12 && day <= 21)
     ) {
-        return (sign = "sagittarius");
+        return (horoscope = "sagittarius");
     }
   }
 
@@ -212,13 +212,13 @@ $(document).ready(function() {
     });
   }
 
-  function getHoroscope(sign, callback) {
-    // var queryURL = "https://ohmanda.com/api/horoscope/" + sign + "/";
+  function getHoroscope(horoscope, callback) {
+    // var queryURL = "https://ohmanda.com/api/horoscope/" + horoscope + "/";
 
-    // var queryURL = "https://cors-anywhere.herokuapp.com/https://sandipbgt.com/theastrologer/api/horoscope/"+sign+"/today/"
+    // var queryURL = "https://cors-anywhere.herokuapp.com/https://sandipbgt.com/theastrologer/api/horoscope/"+horoscope+"/today/"
     // var res;
 
-    var tsign = sign.lower()
+    var tsign = horoscope.lower()
     var queryURL =
       "https://aztro.sameerkumar.website?sign=" + tsign + "&day=today";
 
@@ -246,5 +246,28 @@ $(document).ready(function() {
 
   //test regular Zodiac, should work with any date 
   console.log(getZodiac("1970-01-01"));
+  console.log(chineseZodiac("1970-01-01"));
+  
+  var zodiac = chineseZodiac("1970-01-01");
+
+  function getGiphyImages(zodiac) {
+
+    // Add image
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + zodiac +"&limit=1&api_key=wslWpWhssAgYDK6zVXacBDsacT47flr4";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+
+      var gifs = response.data
+      console.log(gifs[0].images.original.url);
+      
+    });
+
+  }
+  getGiphyImages(zodiac);
 
 });
