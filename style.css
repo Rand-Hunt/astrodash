@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-#heading {
+#heading, #horoscopeName {
     font-family: 'Orbitron', sans-serif;
 }
 
