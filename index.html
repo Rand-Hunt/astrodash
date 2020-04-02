@@ -162,7 +162,7 @@
     </div>
 
 
-    <div id="bday-form1">
+    <!-- <div id="bday-form1">
         <form class="uk-width-1-4 uk-position-large uk-position-top-right uk-overlay uk-overlay-default">
             <fieldset class="uk-fieldset">
 
@@ -170,19 +170,19 @@
 
                 <br>
 
-                <div class="uk-margin uk-width-1-2 uk-display-inline">
+                <div class="uk-margin uk-width-1-2 uk-display-inline"> -->
                     <!-- Month dropdown -->
-                    <div class="uk-margin">
+                    <!-- <div class="uk-margin">
                         <input class="uk-input" type="text" id="bday-month" placeholder="MM">
-                    </div>
+                    </div> -->
 
                     <!-- Day dropdown -->
-                    <div class="uk-margin">
+                    <!-- <div class="uk-margin">
                         <input class="uk-input" type="text" id="bday-day" placeholder="DD">
-                    </div>
+                    </div> -->
 
                     <!-- Year dropdown -->
-                    <div class="uk-margin">
+                    <!-- <div class="uk-margin">
                         <input class="uk-input" type="text" id="bday-year" placeholder="YYYY">
                     </div>
 
@@ -196,7 +196,7 @@
           </div>
         </fieldset>
       </form>
-    </div>
+    </div> -->
 
     <br />
 
@@ -212,7 +212,7 @@
             class="uk-card uk-card-default uk-card-body"
             uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
           >
-            <h3 class="uk-card-title">Horoscope 1</h3>
+            <h3 class="uk-card-title horoscope1">Horoscope 1</h3>
             <p id="horoscope1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -223,11 +223,17 @@
           <div
             class="uk-card uk-card-default uk-card-body"
             uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+            id="weather"
           >
-            <h3 class="uk-card-title">Horoscope 2</h3>
-            <p id="horoscope1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+            <h3 class="uk-card-title" id="curcity"></h3>
+
+            <span class="h2">(<span id="curdate"></span>)</span>
+            <span id="iconweather"></span>
+            
+            <p>Temperature: <span id="curtemp"></span></p>
+            <p>Humidity: <span id="curhumid"></span></p>
+            <p>Wind Speed: <span id="curwind"></span></p>
+
           </div>
         </div>
         <br>
@@ -237,14 +243,14 @@
         <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center uk-margin-top" uk-grid>
 
             <div>
-                <div class="uk-tile uk-tile-muted">
-                    <p class="uk-h4">Word 1</p>
+                <div class="uk-tile uk-tile-muted" id="divword1">
+                    <p class="uk-h4" id="word1">Word 1</p>
                 </div>
             </div>
 
             <div>
-                <div class="uk-tile uk-tile-secondary">
-                    <p class="uk-h4">Word 2</p>
+                <div class="uk-tile uk-tile-secondary" id="divword2">
+                    <p class="uk-h4" id="word2">Word 2</p>
                 </div>
             </div>
             <div>
