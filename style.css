@@ -1,14 +1,19 @@
+body {
+    background-color: black;
+}
+
 #bday-countdown {
-    /* display: none; */
+    display: none;
     bottom: 50px;
 }
 
 #background {
-    height: 1300px;
+    height: 1200px;
 }
 
-#bday-form {
+#bday-form1 {
     /* margin-top: 200px; */
+    display: none;
 }
 
 #horoscope-description {

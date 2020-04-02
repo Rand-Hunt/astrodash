@@ -40,6 +40,60 @@
 
                         <li><a href="#">Natal Chart</a></li>
 
+                        <li>
+                            <!-- This is an anchor toggling the modal -->
+                            <a href="#modal-example" uk-toggle>Click for horoscope!</a>
+                        </li>
+
+
+                        <!-- This is the modal -->
+                        <div id="modal-example" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body" id="bday-form">
+                                <!-- <h2 class="uk-modal-title">Enter your birthday!</h2> -->
+                                <form class="uk-position-medium uk-overlay uk-overlay-default uk-position-top">
+                                    <fieldset class="uk-fieldset">
+
+                                        <legend class="uk-legend">Fill in your Birthday to learn more about your
+                                            horoscope:</legend>
+
+                                        <br>
+
+                                        <div class="uk-margin uk-width-1-2 uk-display-inline">
+                                            <!-- Month dropdown -->
+                                            <div class="uk-margin">
+                                                <input class="uk-input" type="text" id="bday-month" placeholder="MM">
+                                            </div>
+
+                                            <!-- Day dropdown -->
+                                            <div class="uk-margin">
+                                                <input class="uk-input" type="text" id="bday-day" placeholder="DD">
+                                            </div>
+
+                                            <!-- Year dropdown -->
+                                            <div class="uk-margin">
+                                                <input class="uk-input" type="text" id="bday-year" placeholder="YYYY">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="uk-margin-top uk-width-1-2">
+                                            <button class="uk-button" id="bday-submit">Submit</button>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+                        <br>
+
+
+                            <!-- <p class="uk-text-right">
+                                    <button class="uk-button uk-button-default uk-modal-close"
+                                        type="button">Cancel</button>
+                                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                                </p> -->
+
                     </ul>
                 </div>
             </nav>
@@ -51,7 +105,8 @@
         <div class="uk-position-small uk-position-bottom-right uk-height-small uk-padding" uk-grid
             uk-countdown="date: 2020-04-08T23:18:57+00:00" id="bday-countdown">
 
-            <h1 class="uk-heading-small uk-position-bottom-right uk-margin-right" id="bday-count-head">Birthday Countdown:</h1>
+            <h1 class="uk-heading-small uk-position-bottom-right uk-margin-right" id="bday-count-head">Birthday
+                Countdown:</h1>
 
             <div>
                 <div class="uk-countdown-number uk-countdown-days"></div>
@@ -73,7 +128,7 @@
         </div>
     </div>
 
-    <div id="bday-form">
+    <div id="bday-form1">
         <form class="uk-width-1-4 uk-position-large uk-position-top-right uk-overlay uk-overlay-default">
             <fieldset class="uk-fieldset">
 
@@ -129,7 +184,41 @@
                 </div>
             </div>
         </div>
+
+
+        <br>
+
+
+        <!-- Tiles -->
+        <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center uk-margin-top" uk-grid>
+
+            <div>
+                <div class="uk-tile uk-tile-muted">
+                    <p class="uk-h4">Muted</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-tile uk-tile-secondary">
+                    <p class="uk-h4">Secondary</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-tile uk-tile-muted">
+                    <p class="uk-h4">Muted</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-tile uk-tile-secondary">
+                    <p class="uk-h4">Secondary</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
