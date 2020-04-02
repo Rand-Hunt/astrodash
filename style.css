@@ -2,8 +2,12 @@ body {
     background-color: black;
 }
 
-#heading, #horoscopeName {
+#heading, #horoscopeName, #zodiacName {
     font-family: 'Orbitron', sans-serif;
+}
+
+#signs {
+    text-align: center;
 }
 
 #bday-countdown {
