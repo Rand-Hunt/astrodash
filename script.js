@@ -6,16 +6,17 @@ $(document).ready(function() {
   var horoscope = "cancer";
 
   //birthday submit
-  $("#bday-submit").on("click", function(event) {
+  $("#setup-submit").on("click", function(event) {
     event.preventDefault();
     bday = moment(
-      $("#bday-month").val() +
-        "-" +
-        $("#bday-day").val() +
-        "-" +
-        $("#bday-year").val(),
-      "MM-DD-YYYY",
-      true
+      $("#bday").val()
+      //   $("#bday-month").val() +
+      //     "-" +
+      //     $("#bday-day").val() +
+      //     "-" +
+      //     $("#bday-year").val(),
+      //   "MM-DD-YYYY",
+      //   true
     );
 
     if (!bday.isValid()) {
