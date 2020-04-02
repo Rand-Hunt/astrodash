@@ -2,13 +2,17 @@ body {
     background-color: black;
 }
 
+#heading {
+    font-family: 'Orbitron', sans-serif;
+}
+
 #bday-countdown {
     display: none;
     bottom: 50px;
 }
 
 #background {
-    height: 1200px;
+    height: 1100px;
 }
 
 #bday-form1 {
