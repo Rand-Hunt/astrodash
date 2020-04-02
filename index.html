@@ -6,70 +6,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
 
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
 
-    
+
 </head>
 
 <body>
-    <!--Nav Area-->
-<nav>
-    <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href=""></a></li>
-                <li class="uk-parent"><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-    </nav>
-</nav>
+<!--background image-->
+    <div class="uk-background-fixed uk-background-cover uk-height-viewport uk-light" data-src="assets/images/bg1.jpg" uk-img>
+    
+<!--Navbar Area-->
+<div class="uk-position-relative">
+    <img src="images/light.jpg" alt="">
+    <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="uk-navbar-dropdown">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li>
+                        <a href="#">Parent</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
 
 <!--Article Area-->
     <article>
-    <!--Tabs Section-->
-    <ul class="uk-tab" data-uk-tab>
-        <li><a href="">...</a></li>
-    
-        <!-- This is the container enabling the JavaScript -->
-        <li data-uk-dropdown="{mode:'click'}">
-    
-            <!-- This is the menu item toggling the dropdown -->
-            <a href="">...</a>
-    
-            <!-- This is the dropdown -->
-            <div class="uk-dropdown uk-dropdown-small">
-                <ul class="uk-nav uk-nav-dropdown">
-                    <li><a href="">...</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
+
+   
 
 
 
-    <!--list-->
-    <dl class=“uk-description-list uk-description-list-divider”>
-        <dt>Description term</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-        <dt>Description term</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-        <dt>Description term</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-    </dl>
+
     </article>
 
-<!--Footer Area-->
-<footer>
-<ul class="uk-subnav uk-subnav-line">
-    <li>...</li>
-</ul>
-</footer>
-
+    <!--Footer Area-->
+    <footer>
+        <ul class="uk-subnav uk-subnav-line">
+            <li>...</li>
+        </ul>
+    </footer>
+</div> <!-- end background image-->
 </body>
 
 </html>
