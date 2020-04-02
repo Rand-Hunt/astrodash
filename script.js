@@ -1,6 +1,6 @@
 // Once document is loaded
 var resp = "";
-var bday, astrosign, czodiac;
+var bday, astrosign, czodiac, keyword, sentiment;
 
 $(document).ready(function() {
   var horoscope = "cancer";
@@ -9,22 +9,32 @@ $(document).ready(function() {
   $("#bday-submit").on("click", function(event) {
     event.preventDefault();
     bday = moment(
-      "#bday-month".val() + "-" + "#bday-day".val() + "/" + "#bday-year".val(),
+      $("#bday-month").val() +
+        "-" +
+        $("#bday-day").val() +
+        "-" +
+        $("#bday-year").val(),
       "MM-DD-YYYY",
       true
     );
 
-    if (bday.isValid()) {
+    if (!bday.isValid()) {
       alert("Date entered is not valid!");
     }
 
     console.log("bday = " + bday);
 
     astrosign = getZodiac(bday);
-    console.log("astrosign" + astrosign);
+    console.log("astrosign=" + astrosign);
 
     czodiac = chineseZodiac(bday);
     console.log("czodiac=" + czodiac);
+
+    getHoroscope(astrosign, getDataBoth);
+    // resp now contains the horoscope
+    // keyword now has the keyword from horoscope
+    // sentiment now has sentiment from horoscope
+    //
   });
 
   function getZodiac(indate) {
@@ -116,7 +126,7 @@ $(document).ready(function() {
 
     tsign = zodiacTable[tlunarYear % 12];
 
-    console.log(tsign);
+    console.log("tsign = " + tsign);
 
     return tsign;
 
@@ -126,8 +136,8 @@ $(document).ready(function() {
 
   // callback function for horoscope call
   function getDataBoth() {
-    getKeyword();
-    getSentiment();
+    keyword = getKeyword();
+    sentiment = getSentiment();
   }
 
   function getSentiment() {
@@ -201,7 +211,9 @@ $(document).ready(function() {
     // var queryURL = "https://cors-anywhere.herokuapp.com/https://sandipbgt.com/theastrologer/api/horoscope/"+horoscope+"/today/"
     // var res;
 
-    var tsign = horoscope.lower();
+    // console.log(horoscope);
+    var tsign = horoscope.toLowerCase();
+    // tsign = tsign.lower();
     var queryURL =
       "https://aztro.sameerkumar.website?sign=" + tsign + "&day=today";
 
@@ -228,10 +240,10 @@ $(document).ready(function() {
   //  chineseZodiac("1970-01-01");
 
   //test regular Zodiac, should work with any date
-  console.log(getZodiac("1970-01-01"));
-  console.log(chineseZodiac("1970-01-01"));
+  // console.log(getZodiac("1970-01-01"));
+  // console.log(chineseZodiac("1970-01-01"));
 
-  var zodiac = chineseZodiac("1970-01-01");
+  // var zodiac = chineseZodiac("1970-01-01");
 
   function getGiphyImages(zodiac) {
     // Add image
@@ -251,5 +263,5 @@ $(document).ready(function() {
       console.log(gifs[0].images.original.url);
     });
   }
-  getGiphyImages(zodiac);
+  // getGiphyImages(zodiac);
 });
