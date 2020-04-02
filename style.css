@@ -1,14 +1,27 @@
+body {
+    background-color: black;
+}
+
+#heading, #horoscopeName, #zodiacName {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#signs {
+    text-align: center;
+}
+
 #bday-countdown {
-    /* display: none; */
+    display: none;
     bottom: 50px;
 }
 
 #background {
-    height: 1300px;
+    height: 1000px;
 }
 
-#bday-form {
+#bday-form1 {
     /* margin-top: 200px; */
+    display: none;
 }
 
 #horoscope-description {
