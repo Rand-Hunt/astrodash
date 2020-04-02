@@ -12,6 +12,14 @@
 <body>
 
     <div class="uk-container uk-container-large">
+        <!-- Picture -->
+        <div class="uk-cover-container uk-height-medium">
+            <img src="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_960_720.jpg" alt="" uk-cover>
+        </div>
+
+        <br>
+
+        <!-- Chinese zodiac -->
         <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body">
@@ -19,7 +27,7 @@
                     <p>Click here to learn more about your Chinese Zodiac!</p>
                 </div>
             </div>
-        
+
             <div>
                 <div class="uk-card uk-card-default uk-card-large uk-card-hover uk-card-body">
                     <h3 class="uk-card-title">Chinese Zodiac</h3>
@@ -28,52 +36,111 @@
             </div>
         </div>
 
-    </div>
+        <div class="uk-text-center" uk-grid>
 
-    <br>
+            <!-- Horoscope -->
+            <div class="uk-width-1-4@s" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-small">
+                        <div class="uk-card-media-top">
+                            <img src="https://cdn.pixabay.com/photo/2018/05/17/15/24/armillar-ball-3408811_960_720.jpg"
+                                alt="">
+                        </div>
 
-    <div class="uk-container uk-container-large">
-        <div class="uk-child-width-1-4@m" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default uk-card-small">
-                    <div class="uk-card-media-top">
-                        <img src="https://cdn.pixabay.com/photo/2017/11/25/06/31/zodiac-signs-2976245_960_720.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Chinese Zodiac</h3>
-                        <p>Click here to learn more about your Chinese Zodiac!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="uk-child-width-1-4@m" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default uk-card-small">
-                    <div class="uk-card-media-top">
-                        <img src="https://cdn.pixabay.com/photo/2018/05/17/15/24/armillar-ball-3408811_960_720.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Horoscope</h3>
-                        <p>Click here to learn more about your Chinese Zodiac!</p>
+                        <a href
+                            class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-medium">
+                            <h3 class="uk-card-title"><span class="uk-link-heading">Horoscope</span></h3>
+                            <p>Click here to learn more about your Horoscope!</p>
+                        </a>
+
                     </div>
                 </div>
             </div>
+
+            <!-- Chinese zodiac -->
+            <div class="uk-width-1-4@s" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-small">
+                        <div class="uk-card-media-top">
+                            <img src="https://cdn.pixabay.com/photo/2017/11/25/06/31/zodiac-signs-2976245_960_720.jpg"
+                                alt="">
+                        </div>
+
+                        <a href
+                            class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle uk-width-medium">
+                            <h3 class="uk-card-title"><span class="uk-link-heading">Chinese Zodiac</span></h3>
+                            <p>Click here to learn more about your Chinese Zodiac!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Birthday Countdown -->
+            <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid
+                uk-countdown="date: 2020-04-08T23:18:57+00:00">
+                <div>
+                    <div class="uk-countdown-number uk-countdown-days"></div>
+                    <p>Days</p>
+                </div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-hours"></div>
+                    <p>Hours</p>
+                </div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-minutes"></div>
+                    <p>Minutes</p>
+                </div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-seconds"></div>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+
         </div>
-    </div>
 
-    <br>
 
-    <div class="uk-container uk-container-large">
+        <br>
+
+        <dl class="uk-description-list uk-description-list-divider">
+            <dt>Horoscope 1</dt>
+            <dd>This is your first horoscope from the apis.</dd>
+            <dt>Horoscope 2</dt>
+            <dd>This is your second horoscope.</dd>
+        </dl>
+
+        <span class="uk-label">Default</span>
+
+        <span class="uk-label uk-label-success">Success</span>
+
+        <span class="uk-label uk-label-warning">Warning</span>
+
+        <span class="uk-label uk-label-danger">Danger</span>
+
+        <br><br>
+
+        <ul class="uk-list uk-list-bullet">
+            <li>Word 1</li>
+            <li>Word 2</li>
+            <li>Word 3</li>
+        </ul>
+
+        <br>
+
         <a class="uk-button uk-button-default" href="#modal" uk-toggle>Click to see more!</a>
         <div id="modal" uk-modal>
             <div class="uk-modal-dialog uk-modal-body">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
                 <h2 class="uk-modal-title">Gemini</h2>
-                <p>Taking from the twins that represent it, Gemini is considered one of the most important of the zodiacs
-                    since it captures someone's most basic levels.[5] For instance, it articulates their dual nature, a
-                    species with lower self and higher self as well as the way they are bilaterally symmetrical.[5] Gemini
-                    is also considered the most adaptable sign of the zodiac owing to the so-called mutable energy that
+                <p>Taking from the twins that represent it, Gemini is considered one of the most important of the
+                    zodiacs
+                    since it captures someone's most basic levels.[5] For instance, it articulates their dual
+                    nature, a
+                    species with lower self and higher self as well as the way they are bilaterally symmetrical.[5]
+                    Gemini
+                    is also considered the most adaptable sign of the zodiac owing to the so-called mutable energy
+                    that
                     allow individuals within this sign the capability to view life from different angles.[6]</p>
                 <p class="uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
@@ -81,32 +148,8 @@
                 </p>
             </div>
         </div>
-    </div>
 
-    <br>
-
-    <div class="uk-container uk-container-large">
-        <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2020-04-08T23:18:57+00:00">
-            <div>
-                <div class="uk-countdown-number uk-countdown-days"></div>
-                <p>Days</p>
-            </div>
-            <div>
-                <div class="uk-countdown-number uk-countdown-hours"></div>
-                <p>Hours</p>
-            </div>
-            <div>
-                <div class="uk-countdown-number uk-countdown-minutes"></div>
-                <p>Minutes</p>
-            </div>
-            <div>
-                <div class="uk-countdown-number uk-countdown-seconds"></div>
-                <p>Seconds</p>
-            </div>
-        </div>
     </div>
-    
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
