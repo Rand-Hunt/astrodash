@@ -1,4 +1,271 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+
+</head>
+
+<body>
+<!--background image-->
+    <div class="uk-background-fixed uk-background-cover uk-height-viewport uk-light" data-src="assets/images/bg1.jpg"
+        uk-img>
+
+<!--Navbar Area-->
+                <div class="uk-position-relative">
+                    <div class="uk-position-top">
+                        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <!--NavBar Left-->
+                            <div class="uk-navbar-left">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active">
+            <!--Settings-->
+                                        <a class="uk-button uk-button-default" href="#modal-center" uk-toggle><h1>Setup</h2></a>
+        
+        <div id="modal-center" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+                <p><div class="uk-container uk-container-expand uk-container-large">
+
+                    <form class=" uk-position-medium  uk-overflow-auto uk-position-top-right uk-overlay uk-overlay-default">
+                        <fieldset class="uk-fieldset">
+            
+                            <legend class="uk-legend">Dashboard Setup</legend>
+            
+                            <div class="uk-margin uk-width-1-2 uk-display-inline">
+                                <!-- Month dropdown -->
+                                <label class="" for="form-stacked-text">Birthday Month:</label>
+                                <select class="uk-select">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+            
+                                <!-- Day dropdown -->
+                                <label class="" for="form-stacked-text">Birthday Day:</label>
+                                <select class="uk-select">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+            
+                                </select>
+                            </div><!--End Birthday Data-->
+
+                            <!---City Data-->
+                            <label> Current City:
+                                <input name="bc" autocomplete="">
+                              </label>
+
+                            <!--submit Button-->
+                            <div class="uk-margin-top uk-width-1-2">
+                                <button class="uk-button">Submit</button>
+                            </div>
+            
+                        </fieldset>
+                    </form>
+                </div></p>
+        
+            </div>
+        </div>
+                                        
+                                    <li><a href="natal.html">Natal Chart</a></li>
+                                    <!-- <li>
+                                        <a href="#">Parent</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!--End Navbar Left-->
+        
+                            <!--Navbar Right-->
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active">
+                                        <!--App List-->
+                                        <a class="uk-button uk-button-default" href="#modal-full" uk-toggle><h1>Tools</h1></a>
+        
+                                        <div id="modal-full" class="uk-modal-full" uk-modal>
+                                            <div class="uk-modal-dialog">
+                                                <button class="uk-modal-close-full uk-close-large uk-button uk-button-default uk-button-large">Tools</button> 
+                                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                                    <div class="uk-background-cover"
+                                                        style="background-image: url('assets/images/zodiac.jpg');" uk-height-viewport>
+                                                    </div>
+                                                    <div class="uk-padding-large">
+                                                        <h1>Tools</h1>
+                                                        <!--Individual Apps-->
+                                                        <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
+                                                            <div>
+                                                                <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Horoscope</p>
+                                                               </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Chinese Horoscope</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Vedic Horoscope</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Analysis</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Playlist</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
+                                                                    <p class="uk-h4">Other</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+        
+                                                        <!--ssssssssssssssssssssssssss-->
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                            aliquip ex ea commodo consequat. </p>
+                                                    
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <!--jjjjjjjjjjjjjjjjjjj-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End Navbar Right-->
+                </nav>
+            </div>
+        </div>
+
+
+
+        <!--Article Area-->
+        <article>
+
+
+
+
+
+
+        </article>
+
+<!--Footer Area-->
+<!-- Birthday Countdown -->
+        <div class="uk-position-small uk-position-bottom-left uk-height-small uk-padding" uk-grid
+            uk-countdown="date: 2020-04-08T23:18:57+00:00">
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -154,6 +421,11 @@
             </div>
 
         </div>
+    </div>
+    </div> <!-- end background image-->
+</body>
+
+</html>
         <div>
           <div class="uk-countdown-number uk-countdown-seconds"></div>
           <p>Seconds</p>
