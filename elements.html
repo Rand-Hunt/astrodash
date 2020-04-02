@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Picture -->
+    <div class="uk-height-large uk-background-cover uk-light uk-flex uk-position-relative" uk-parallax="bgy: -200"
+        style="background-image: url('https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_960_720.jpg');">
+
+        <!-- <div class="uk-position-relative"> -->
+        <!-- <img src="images/light.jpg" alt=""> -->
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a href="#">Applications</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Horoscope</a></li>
+                                    <li><a href="#">Get your horoscope!</a></li>
+                                    <li class="uk-nav-header">Chinese Zodiac</li>
+                                    <li><a href="#">Get your zodiac</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="#">Natal Chart</a></li>
+                        <li><a href="#">Item</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Birthday Countdown -->
+        <div class="uk-position-small uk-position-bottom-left uk-height-small uk-padding" uk-grid
+            uk-countdown="date: 2020-04-08T23:18:57+00:00">
+            <div>
+                <div class="uk-countdown-number uk-countdown-days"></div>
+                <p>Days</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-hours"></div>
+                <p>Hours</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-minutes"></div>
+                <p>Minutes</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-seconds"></div>
+                <p>Seconds</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-large">
+
+        <form class="uk-width-1-5 uk-position-medium uk-position-top-right uk-overlay uk-overlay-default">
+            <fieldset class="uk-fieldset">
+
+                <legend class="uk-legend">Fill in your Birthday:</legend>
+
+                <div class="uk-margin uk-width-1-2 uk-display-inline">
+                    <!-- Month dropdown -->
+                    <label class="uk-form-label uk-form-small" for="form-stacked-text">Month:</label>
+                    <select class="uk-select">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+
+                    <!-- Day dropdown -->
+                    <label class="uk-form-label uk-form-small" for="form-stacked-text">Day:</label>
+                    <select class="uk-select">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+
+                    </select>
+                </div>
+
+                <div class="uk-margin-top uk-width-1-2">
+                    <button class="uk-button">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="uk-container uk-container-large">
+
+        <!-- Chinese zodiac -->
+        <div class="uk-child-width-1-2 uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-large uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-default uk-card-large uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Tiles -->
+        <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center" uk-grid>
+
+            <div>
+                <div class="uk-tile uk-tile-muted">
+                    <p class="uk-h4">Muted</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-tile uk-tile-secondary">
+                    <p class="uk-h4">Secondary</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-tile uk-tile-muted">
+                    <p class="uk-h4">Muted</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-tile uk-tile-secondary">
+                    <p class="uk-h4">Secondary</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scrollspy cards top adn bottom -->
+        <div class="uk-child-width-1-3@m" uk-grid
+            uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body"
+                    uk-scrollspy-class="uk-animation-slide-top">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Chinese Zodiac</h3>
+                    <p>Click here to learn more about your Chinese Zodiac!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scrollspy cards - left and right -->
+        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body"
+                    uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <h3 class="uk-card-title">Left</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-default uk-card-body"
+                    uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <h3 class="uk-card-title">Right</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-text-center" uk-grid>
+
+            <!-- Horoscope -->
+            <div class="uk-width-1-2">
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://cdn.pixabay.com/photo/2018/05/17/15/24/armillar-ball-3408811_960_720.jpg"
+                                alt="">
+                        </div>
+
+                        <a href class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle">
+                            <h3 class="uk-card-title"><span class="uk-link-heading">Horoscope</span></h3>
+                            <p>Click here to learn more about your Horoscope!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chinese zodiac -->
+            <div class="uk-width-1-2">
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://cdn.pixabay.com/photo/2017/11/25/06/31/zodiac-signs-2976245_960_720.jpg"
+                                alt="">
+                        </div>
+
+                        <a href class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle">
+                            <h3 class="uk-card-title"><span class="uk-link-heading">Chinese Zodiac</span></h3>
+                            <p>Click here to learn more about your Chinese Zodiac!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <br>
+
+        <p uk-margin>
+            <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>Horoscope 1</a>
+            <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>Horoscope 2</a>
+        </p>
+
+        <div id="modal-group-1" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Headline 1</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-group-2" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Headline 2</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <a href="#modal-group-1" class="uk-button uk-button-primary" uk-toggle>Previous</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        
+        <dl class="uk-width-1-2@s uk-description-list uk-description-list-divider">
+            <dt>Horoscope 1</dt>
+            <dd>This is your first horoscope from the apis.</dd>
+            <dt>Horoscope 2</dt>
+            <dd>This is your second horoscope.</dd>
+        </dl>
+
+        <!-- Birthday alert -->
+        <div class="uk-width-1-2@s uk-alert-danger" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>HAPPY HAPPY BIRTHDAY TO YOU!!!.</p>
+        </div>
+
+        <span class="uk-label">Default</span>
+
+        <span class="uk-label uk-label-success">Success</span>
+
+        <span class="uk-label uk-label-warning">Warning</span>
+
+        <span class="uk-label uk-label-danger">Danger</span>
+
+        <br><br>
+
+        <ul class="uk-list uk-list-divider">
+            <li>Word 1</li>
+            <li>Word 2</li>
+            <li>Word 3</li>
+        </ul>
+
+        <br>
+
+        <a class="uk-button uk-button-default" href="#modal" uk-toggle>Click to see more!</a>
+        <div id="modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h2 class="uk-modal-title">Gemini</h2>
+                <p>Taking from the twins that represent it, Gemini is considered one of the most important of the
+                    zodiacs
+                    since it captures someone's most basic levels.[5] For instance, it articulates their dual
+                    nature, a
+                    species with lower self and higher self as well as the way they are bilaterally symmetrical.[5]
+                    Gemini
+                    is also considered the most adaptable sign of the zodiac owing to the so-called mutable energy
+                    that
+                    allow individuals within this sign the capability to view life from different angles.[6]</p>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
