@@ -1,6 +1,6 @@
 #bday-countdown {
     /* display: none; */
-    margin-bottom: 20px;
+    bottom: 50px;
 }
 
 #background {
@@ -13,4 +13,9 @@
 
 #horoscope-description {
     /* display: none; */
+}
+
+#bday-count-head {
+    bottom: 110px;
+
 }
