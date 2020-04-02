@@ -12,7 +12,7 @@
 <body>
 
     <!-- Picture -->
-    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200"
+    <div class="uk-height-large uk-background-cover uk-light uk-flex uk-position-relative" uk-parallax="bgy: -200"
         style="background-image: url('https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_960_720.jpg');">
 
         <!-- <div class="uk-position-relative"> -->
@@ -29,9 +29,6 @@
                                     <li><a href="#">Get your horoscope!</a></li>
                                     <li class="uk-nav-header">Chinese Zodiac</li>
                                     <li><a href="#">Get your zodiac</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -45,7 +42,7 @@
         </div>
 
         <!-- Birthday Countdown -->
-        <div class="uk-position-small uk-position-center-right uk-height-small uk-margin" uk-grid
+        <div class="uk-position-small uk-position-bottom-left uk-height-small uk-padding" uk-grid
             uk-countdown="date: 2020-04-08T23:18:57+00:00">
             <div>
                 <div class="uk-countdown-number uk-countdown-days"></div>
@@ -67,80 +64,76 @@
         </div>
     </div>
 
-    <div class="uk-container uk-container-large">
-        <div>
-            <form class="uk-width-1-5 uk-position-medium uk-position-top-right uk-overlay uk-overlay-default">
-                <fieldset class="uk-fieldset">
+    <div class="uk-container uk-container-large uk-height-small">
 
-                    <legend class="uk-legend">Fill in your Birthday:</legend>
+        <form class="uk-width-1-5 uk-position-medium uk-position-top-right uk-overlay uk-overlay-default">
+            <fieldset class="uk-fieldset">
 
-                    <div class="uk-margin uk-width-1-2 uk-display-inline">
-                        <!-- Month dropdown -->
-                        <label class="uk-form-label uk-form-small" for="form-stacked-text">Month:</label>
-                        <select class="uk-select">
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
+                <legend class="uk-legend">Fill in your Birthday:</legend>
 
-                        <!-- Day dropdown -->
-                        <label class="uk-form-label uk-form-small" for="form-stacked-text">Day:</label>
-                        <select class="uk-select">
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
+                <div class="uk-margin uk-width-1-2 uk-display-inline">
+                    <!-- Month dropdown -->
+                    <label class="uk-form-label uk-form-small" for="form-stacked-text">Month:</label>
+                    <select class="uk-select">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
 
-                        </select>
-                    </div>
+                    <!-- Day dropdown -->
+                    <label class="uk-form-label uk-form-small" for="form-stacked-text">Day:</label>
+                    <select class="uk-select">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
 
-                    <div class="uk-margin-top uk-width-1-2">
-                        <button class="uk-button">Submit</button>
-                    </div>
+                    </select>
+                </div>
 
-                </fieldset>
-            </form>
-        </div>
+                <div class="uk-margin-top uk-width-1-2">
+                    <button class="uk-button">Submit</button>
+                </div>
 
+            </fieldset>
+        </form>
     </div>
-
-    <br>
 
     <div class="uk-container uk-container-large">
 
@@ -244,8 +237,7 @@
                                 alt="">
                         </div>
 
-                        <a href
-                            class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle">
+                        <a href class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle">
                             <h3 class="uk-card-title"><span class="uk-link-heading">Horoscope</span></h3>
                             <p>Click here to learn more about your Horoscope!</p>
                         </a>
@@ -263,8 +255,7 @@
                                 alt="">
                         </div>
 
-                        <a href
-                            class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle">
+                        <a href class="uk-display-block uk-card uk-card-body uk-card-default uk-link-toggle">
                             <h3 class="uk-card-title"><span class="uk-link-heading">Chinese Zodiac</span></h3>
                             <p>Click here to learn more about your Chinese Zodiac!</p>
                         </a>
