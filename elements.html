@@ -43,6 +43,28 @@
                 </div>
             </nav>
         </div>
+
+        <!-- Birthday Countdown -->
+        <div class="uk-grid-small uk-child-width-auto uk-position-center-right" uk-grid
+        uk-countdown="date: 2020-04-08T23:18:57+00:00">
+            <div>
+                <div class="uk-countdown-number uk-countdown-days"></div>
+                <p>Days</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-hours"></div>
+                <p>Hours</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-minutes"></div>
+                <p>Minutes</p>
+            </div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-seconds"></div>
+                <p>Seconds</p>
+            </div>
+
+        </div>
     </div>
 
     <div class="uk-container uk-container-large">
@@ -111,6 +133,7 @@
                 </fieldset>
             </form>
         </div>
+        
     </div>
 
     <br>
@@ -196,6 +219,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
+
+            
             <div>
                 <div class="uk-card uk-card-default uk-card-body"
                     uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
@@ -245,45 +270,23 @@
             </div>
 
 
-            <!-- Birthday Countdown -->
-            <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid
-                uk-countdown="date: 2020-04-08T23:18:57+00:00">
-                <div>
-                    <div class="uk-countdown-number uk-countdown-days"></div>
-                    <p>Days</p>
-                </div>
-                <div>
-                    <div class="uk-countdown-number uk-countdown-hours"></div>
-                    <p>Hours</p>
-                </div>
-                <div>
-                    <div class="uk-countdown-number uk-countdown-minutes"></div>
-                    <p>Minutes</p>
-                </div>
-                <div>
-                    <div class="uk-countdown-number uk-countdown-seconds"></div>
-                    <p>Seconds</p>
-                </div>
-
-            </div>
-
-            <!-- Birthday alert -->
-            <div class="uk-alert-danger" uk-alert>
-                <a class="uk-alert-close" uk-close></a>
-                <p>HAPPY HAPPY BIRTHDAY TO YOU!!!.</p>
-            </div>
-
         </div>
 
 
         <br>
 
-        <dl class="uk-description-list uk-description-list-divider">
+        <dl class="uk-width-1-2@s uk-description-list uk-description-list-divider">
             <dt>Horoscope 1</dt>
             <dd>This is your first horoscope from the apis.</dd>
             <dt>Horoscope 2</dt>
             <dd>This is your second horoscope.</dd>
         </dl>
+
+         <!-- Birthday alert -->
+         <div class="uk-width-1-2@s uk-alert-danger" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>HAPPY HAPPY BIRTHDAY TO YOU!!!.</p>
+        </div>
 
         <span class="uk-label">Default</span>
 
